@@ -42,3 +42,12 @@ git branch ( to check which branch you are operating on)
 git checkout master ( to send everything to master vein)
 
 git branch ( to double check )
+
+// make changes in master and need to sync this change to develop branch
+// assume changes has already been checked into master branch
+
+git checkout develop
+
+git merge master ( merge changes done in master branch into develop branch)
+
+git push -u origin develop
